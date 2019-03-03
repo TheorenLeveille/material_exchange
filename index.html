@@ -36,50 +36,51 @@ a:hover{
     margin:14px;
     padding:10px 14px;
 }
-.mainBody ul li{
-    width: 250px;
-    font-weight:bold;
+.options li{
+    font-size:28px;
+    position:relative;
+    margin-left:7%;
+    vertical-align:middle;
+    margin-top:80px;
+    box-shadow:5px 5px 5px gray;
+    word-wrap:normal;
+    width:20%;
+    height:200px;
     text-align:center;
-    font-size:32px;
-    line-height:230px;
+    font-weight:bold;
+    line-height:normal;   
 }
-.acquire {
+.acquire{
     background-color:black;
-    box-shadow: 5px 5px 5px #888888;
     color:white; 
 }
 .project{
-    background-color:grey;
+    background-color:rgb(143, 140, 140);
     color:black;
-    box-shadow: 5px 5px 5px black;
 }
 .contribute{
     background-color:black;
-    box-shadow: 5px 5px 5px #888888;
-    color:white; 
+    color:white;
 }
-/* @media screen and (max-width:1250px){
-    .mainBody ul li{
-        width: 40%;
-        margin:20px; 
-    }
-} */
+p{
+    margin-top:60px;
+}
 
 </style>
 </head>
+
 <body>
 <div class="logo" ><a href="#">Material Exchange</a></div>
+
 <ul class="navigation">
     <li><a href="#"> Log In</a></li>
     <li><a href="#"> Sign Up</a></li>
 </ul>
-<div class="mainBody">
-    <ul>
-        <a href="#"><li class="acquire">ACQUIRE</li></a>
-        <a href="#"><li class="project">CREATE A PROJECT</li></a>
-        <a href="#"><li class="contribute">CONTRIBUTE</li></a>       
-    </ul> 
-</div>
+<ul class="options">
+    <a href="#"><li class="acquire"><p>ACQUIRE</p></li></a>
+    <a href="#"><li class="project"><p class="pro1">CREATE A PROJECT</p></li></a>
+    <a href="#"><li class="contribute"><p>CONTRIBUTE</p></li></a>       
+</ul> 
 
 </body>
 </html>
