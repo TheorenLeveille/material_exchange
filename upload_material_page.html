@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload Material</title>
+
+    <script src='js/firebaseAPI.js'></script>
+    <link rel='stylesheet' type='text/css' href='css/uploadMaterial.css'>
+
+</head>
+<body>
+<div class="logo" ><a href="#">Create Your Own Project</a></div>
+
+<ul class="navigation">
+    <li><a href="#"> Log In</a></li>
+    <li><a href="#"> Sign Up</a></li>
+</ul>
+
+<div class="mainRect">
+    <a href="#"><div class="uploadPhoto">
+        <img src='images/camera.png' height="30px" width="30px">
+        <p>Upload Photo</p>
+    </div></a>
+
+    <form class="materialType">
+        <label for="mType">Material Type</label>
+        <input type="text" id="mType" name="mType">
+    </form>
+
+    <form class="quantity">
+        <label for="qname">Quantity Available</label>
+        <input type="text" id="qname" name="qname">
+    </form></br>
+    
+    <label class='dtitle'>Description</label>
+    <form>
+        <textarea class='description' rows='10' cols='48'></textarea>
+    </form>
+
+    <a href="#"><div class="submit"><p>Submit</p></div></a>  
+</div>
+
+</body>
+</html>
