@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 <style>
-
-
-.banner {
-        background-color: grey;
-        padding: 20px 0 20px 0;
-        list-style: none;
-        padding: 20px 0 20px 0;
-        text-align: right
-
-    }
-
-.banner > li{
-    display: inline-block;
-    padding-right: 0 25px 0 25px;
-    color: white;
-    
+#bg {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-.acquire {
+.navigation {
+    height:40px;
+    background-color:#616161;
+    font-size: 14px;
+    color:white;
+    list-style:none;
+    text-align:right;
+    padding: 20px
+}
+.navigation > li{
+    display:inline-block;
+    padding:15px;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+.logo{
+    background-color:black;
+    font-size:24px;
+    color:white;
     float:left;
-    color: white;
-    padding-left: 25px;
-    font-weight: bold;
+    margin:14px;
+    padding:10px 14px;
 }
-
 form{
     width:1000px;
     margin:auto;
@@ -89,32 +92,33 @@ form{
 </style> 
     
 </head>
-<body>
-    <ul class="banner">
-    <div class="acquire">
-        ACQUIRE
-    </div>
-    <li>LOG IN </br> SIGN UP</li>
-    </ul>
+<body id='bg'>
+        
+<div class="logo" ><a href="index.html">Aquire</a></div>
+
+<ul class="navigation">
+    <li><a href="logIn.html"> Log In</a></li>
+    <li><a href="logIn.html"> Sign Up</a></li>
+</ul>
  
-    <form>
-        <input type = "text" name="text" class="search" placeholder="Search Here">
-        <input type="submit" name="submit" class="submit" value="search">
-    </form>
-    
-    
-    <div class="container">
-            <ul>
-                <li> <div class="bottom">PLASTICS</div><image src="/Users/kevin/Desktop/material_exchange/images/platics.jpg" width="300" height="200"></image> </li>
-                <li> <div class="bottom">METALS</div><image src="/Users/kevin/Desktop/material_exchange/images/metals.jpg" width="300" height="200"></image> </li>
-                <li> <div class="bottom">APPLIANCES</div><image src="/Users/kevin/Desktop/material_exchange/images/appliances.jpg" width="300" height="200"></image> </li>
-                <li> <div class="bottom">ELECTRONICS</div><image src="/Users/kevin/Desktop/material_exchange/images/electronics.jpg" width="300" height="200"></image> </li>
-                <li> <div class="bottom">WOOD</div><image src="/Users/kevin/Desktop/material_exchange/images/wood.jpg" width="300" height="200"></image> </li>
-                <li> <div class="bottom">CLOTHES</div><image src="/Users/kevin/Desktop/material_exchange/images/clothes.jpg" width="300" height="200"></image> </li>
-                <li> <div class="bottom">CARDBOARD</div> <image src="/Users/kevin/Desktop/material_exchange/images/cardboard.jpg" width="300" height="200"></image></li>
-                <li> <div class="bottom">MISC</div><image src="/Users/kevin/Desktop/material_exchange/images/MISC.jpg" width="300" height="200"></image> </li>
-                
-            </ul>
-        </div>
+<form>
+    <input type = "text" name="text" class="search" placeholder="Search Here">
+    <input type="submit" name="submit" class="submit" value="search">
+</form>
+
+
+<div class="container">
+    <ul>
+        <li> <div class="bottom">PLASTICS</div><image src="images/platics.jpg" width="300" height="200"></image> </li>
+        <li> <div class="bottom">METALS</div><image src="images/metals.jpg" width="300" height="200"></image> </li>
+        <li> <div class="bottom">APPLIANCES</div><image src="images/appliances.jpg" width="300" height="200"></image> </li>
+        <li> <div class="bottom">ELECTRONICS</div><image src="images/electronics.jpg" width="300" height="200"></image> </li>
+        <li> <div class="bottom">WOOD</div><image src="images/wood.jpg" width="300" height="200"></image> </li>
+        <li> <div class="bottom">CLOTHES</div><image src="images/clothes.jpg" width="300" height="200"></image> </li>
+        <li> <div class="bottom">CARDBOARD</div> <image src="images/cardboard.jpg" width="300" height="200"></image></li>
+        <li> <div class="bottom">MISC</div><image src="images/MISC.jpg" width="300" height="200"></image> </li>
+        
+    </ul>
+</div>
 </body>
 </html>

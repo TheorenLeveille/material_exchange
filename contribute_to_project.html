@@ -62,9 +62,8 @@ a:hover{
     color:black; 
 }
 .button{
-    position:relative;
     background-color:black;
-    margin:195px 0 0 60px;
+    margin:350px 0 0 60px;
     height:60px;
     width:150px;
     border-radius:10px;  
@@ -78,20 +77,15 @@ a:hover{
 .button:hover{
     box-shadow:5px 5px 5px #616161;
 } 
-.projectName, .materialType {
-    position:relative;
-    margin:10px 0 0 280px;
+.projectName {
+    width:100px;  
+    margin-left:300px;
 }
-#pname, #mType{
-    width:350px;
+#pname{
+    width:300px;
 }
-.quantity{
-    position:relative;
-    margin:10px 0 0 280px;
-}
-#qname{
-    width:280px
-}
+
+
 </style>
 </head>
 <body>
@@ -107,24 +101,11 @@ a:hover{
         <img src=images/camera.png height="30px" width="30px">
         <p>Upload Photo</p>
     </div></a>
-
-    <form class="projectName">
-            <label for="pname">Project Name</label>
-            <input type="text" id="pname" name="pname">
-    </form>
-
-    <form class="materialType">
-            <label for="mType">Material Type</label>
-            <input type="text" id="mType" name="mType">
-    </form>
-
-    <form class="quantity">
-            <label for="qname">Quantity Required</label>
-            <input type="text" id="qname" name="qname">
-    </form>
-
     <a href="#"><div class="button"><p>Submit</p></div></a>
-    
+    <form class="projectName">
+        <label for="pname">Project Name</label>
+        <input type="text" id="pname" name="pname">
+    </form>
 </div>
 
 </body>
