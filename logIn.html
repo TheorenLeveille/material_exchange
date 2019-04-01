@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-#firebaseui-auth-container{
-    margin-top: 200px;
-    background-color:white;
-    padding: 10px;
-    
-}
-</style>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+<link rel='stylesheet' href='css/log_in_CSS.css'>
+
 <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -22,13 +17,10 @@
   };
   firebase.initializeApp(config);
 </script>
-
 <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 </head>
 
 <body id='bg'>
-
 <script>
 	// Initialize the FirebaseUI Widget using Firebase.
 	var ui = new firebaseui.auth.AuthUI(firebase.auth());
@@ -36,7 +28,6 @@
 
 <!-- The surrounding HTML is left untouched by FirebaseUI.
      Your app may use that space for branding, controls and other customizations.-->
-<h1>Welcome to log in page</h1>
 <div id="firebaseui-auth-container"></div>
 <div id="loader">Loading...</div>
 

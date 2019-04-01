@@ -1,10 +1,7 @@
-
 <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
 
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-
-// Initialize Firebase
-var config = {
+  // Initialize Firebase
+  var config = {
     apiKey: "AIzaSyD8avaEz9os-na2KxTY34qLn-oDDss6vhg",
     authDomain: "material-exchange.firebaseapp.com",
     databaseURL: "https://material-exchange.firebaseio.com",
@@ -13,9 +10,15 @@ var config = {
     messagingSenderId: "792758028792"
   };
   firebase.initializeApp(config);
-  
+
+
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+
 // Initialize the FirebaseUI Widget using Firebase.
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
+
 
 var uiConfig = {
     callbacks: {
@@ -51,4 +54,3 @@ var uiConfig = {
 
 // The start method will wait until the DOM is loaded.
 ui.start('#firebaseui-auth-container', uiConfig);
-

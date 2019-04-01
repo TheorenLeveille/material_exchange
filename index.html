@@ -1,86 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body{
-    overflow:scroll;
-    margin:none;
-    padding:none;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.navigation {
-    height:40px;
-    background-color:#616161;
-    font-size: 14px;
-    color:white;
-    list-style:none;
-    text-align:right;
-    padding: 20px
-}
-li{
-    display:inline-block;
-    padding:15px;
-}
-a{
-    text-decoration:none;
-    color:white;
-}
-a:hover{
-    color:#c1c1c1;
-}
-.logo{
-    background-color:black;
-    font-size:24px;
-    color:white;
-    float:left;
-    margin:14px;
-    padding:10px 14px;
-}
-.options li{
-    font-size:28px;
-    position:relative;
-    margin-left:7%;
-    vertical-align:middle;
-    margin-top:80px;
-    box-shadow:5px 5px 5px gray;
-    word-wrap:normal;
-    width:20%;
-    height:200px;
-    text-align:center;
-    font-weight:bold;
-    line-height:normal;   
-}
-.acquire{
-    background-color:black;
-    color:white; 
-}
-.project{
-    background-color:rgb(143, 140, 140);
-    color:black;
-}
-.contribute{
-    background-color:black;
-    color:white;
-}
-p{
-    margin-top:70px;
-}
-
-</style>
+    <link rel='stylesheet' href='css/index_CSS.css'>
 </head>
 
 <body>
-<div class="logo" ><a href="#">Material Exchange</a></div>
+<div class="logo" ><a href="#">X-change</a></div>
 
 <ul class="navigation">
     <li><a href="logIn.html"> Log In</a></li>
     <li><a href="logIn.html"> Sign Up</a></li>
 </ul>
-<ul class="options">
-    <a href="acquire_page.html"><li class="acquire"><p>ACQUIRE</p></li></a>
-    <a href="#"><li class="project"><p class="pro1">PROJECT</p></li></a>
-    <a href="upload_material_page.html"><li class="contribute"><p>CONTRIBUTE</p></li></a>       
-</ul> 
+<div class="options">
+    <div class="acquire"><a href="acquire_page.html"><p>ACQUIRE</p></a></div>
+    <div class="contribute"><a href="upload_material_page.html"><p>CONTRIBUTE</p></a></div>     
+</div> 
 
 </body>
 </html>
