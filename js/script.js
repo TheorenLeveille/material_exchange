@@ -124,7 +124,7 @@ function GetMisc(category){
         item = list[x]
         var div = document.createElement("div");
         div.id = x;
-        document.getElementById('containers').appendChild(div);
+        document.getElementById('container').appendChild(div);
         let node = document.createTextNode("material: " + x)
         div.appendChild(node);
         for (y in item){
