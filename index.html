@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
     <script src="js/firebaseAPI.js"></script>
@@ -10,22 +9,21 @@
 
 <body id='bg'>
 
-<a href="#"><img id='xchange' src='images/newXchange_logo.png'></a>
-
 <ul class="navigation">
     <li><a href="logIn.html"> Log In</a></li>
     <li><a href="logIn.html"> Sign Up</a></li>
     <li id='cart_p'><a href="cart.html"><img id='cart' src='images/cart.png'></a></li>
 </ul>
 
-<div id='slogan'>One person's trash in another person's treasure...</div>
+<div id ='outerContainer'>
+    <img id='xchange' src='images/newXchange_logo.png'>
+    <div id='slogan'>One person's trash in another person's treasure...</div>
 
-<div class="button-container">
-    <a href="upload_material_page.html"><div id="give"><span>Give</span></div></a>
-    <a href="acquire_page.html"><div id="take" ><span>Take</span></div></a>
+    <div class="button-container">
+        <a href="upload_material_page.html"><div id="give"><span>Give</span></div></a>
+        <a href="acquire_page.html"><div id="take" ><span>Take</span></div></a>
+    </div>
 </div>
-
 <script src="js/create_users.js"></script>
-
 </body>
 </html>
