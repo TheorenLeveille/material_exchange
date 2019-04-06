@@ -25,6 +25,7 @@ function GetPlastics(category){
         console.log(snap.val());
 
         DisplayList(list)
+        
 
 
     });
@@ -124,10 +125,13 @@ function GetMisc(category){
         item = list[x]
         var div = document.createElement("div");
         div.id = x;
+        div.style.position = "relative"
+        div.style.display = "inline-block"
         div.style.border = "outset"
-        div.style.width = "300"
-        div.style.margin = "50"
-        div.style.overflow = "scroll"
+        div.style.width = "340"
+        div.style.margin = "37"
+        // div.setAttribute("overflow-x", "scroll")
+        // div.style.overflow = "scroll"
 
         document.getElementById('container').appendChild(div);
         let node = document.createTextNode(item['material type'])
@@ -153,7 +157,7 @@ function GetMisc(category){
     function DisplayImage(picturefile) {
     let y = document.createElement("IMG");
     y.setAttribute("src", picturefile);
-    y.setAttribute("width", "300");
+    y.setAttribute("width", "340");
     y.setAttribute("height", "300");
     y.setAttribute("clear", "both")
     y.setAttribute("float", "left")
