@@ -49,7 +49,10 @@ var uiConfig = {
     // Terms of service url. If you want. Right now... we want a succcessful log in to go to one page
     tosUrl: 'logged_in.html',
     // Privacy policy url.
-    privacyPolicyUrl: 'logged_in.html'
+    privacyPolicyUrl: 'logged_in.html',
+
+    accountChooserEnabled: false
+
     };
 
 // The start method will wait until the DOM is loaded.

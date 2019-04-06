@@ -124,6 +124,11 @@ function GetMisc(category){
         item = list[x]
         var div = document.createElement("div");
         div.id = x;
+        div.style.border = "outset"
+        div.style.width = "300"
+        div.style.margin = "50"
+        div.style.overflow = "scroll"
+
         document.getElementById('container').appendChild(div);
         let node = document.createTextNode(item['material type'])
         div.appendChild(node);
@@ -145,7 +150,6 @@ function GetMisc(category){
     
     }
     }
-    
     function DisplayImage(picturefile) {
     let y = document.createElement("IMG");
     y.setAttribute("src", picturefile);
