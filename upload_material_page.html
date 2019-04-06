@@ -7,14 +7,16 @@
 
     <script src='js/firebaseAPI.js'></script>
     <link rel='stylesheet' type='text/css' href='css/uploadMaterial.css'>
+    <script src='js/upload_material.js'></script>
 
 </head>
 <body>
-<div class="logo" ><a href="#">Upload Your Material</a></div>
+<a href="index.html"><img id='xchange' src='images/newXchange_logo.png'></a>
 
 <ul class="navigation">
     <li><a href="logIn.html"> Log In</a></li>
     <li><a href="logIn.html"> Sign Up</a></li>
+    <li id='cart_p'><a href="cart.html"><img id='cart' src='images/cart.png'></a></li>
 </ul>
 
 <div class="mainRect">
@@ -25,20 +27,20 @@
 
     <form class="materialType">
         <label for="mType">Material Type</label>
-        <input type="text" id="mType" name="mType">
+        <input type="text" id="mType" name="mType" value=''>
     </form>
 
     <form class="quantity">
         <label for="qname">Quantity Available</label>
-        <input type="text" id="qname" name="qname">
+        <input type="text" id="qname" name="qname" value=''>
     </form></br>
     
     <label class='dtitle'>Description</label>
     <form>
-        <textarea class='description' rows='10' cols='48'></textarea>
+        <textarea id='description' rows='10' cols='48' value=''></textarea>
     </form>
 
-    <a href="#"><div class="submit"><p>Submit</p></div></a>  
+    <div id="submit" onclick="uploadMaterial()"><p>Submit</p></div> 
 </div>
 
 </body>

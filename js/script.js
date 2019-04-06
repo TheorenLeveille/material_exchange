@@ -125,14 +125,18 @@ function GetMisc(category){
         var div = document.createElement("div");
         div.id = x;
         document.getElementById('container').appendChild(div);
-        let node = document.createTextNode("material: " + x)
+        let node = document.createTextNode(item['material type'])
         div.appendChild(node);
         for (y in item){
             
             console.log(y)
             let subdiv = document.createElement("div");
             document.getElementById(x).appendChild(subdiv);
+            if (y == "material type"){
+                continue
+            }
             let node2 = document.createTextNode(y + ": " + item[y])
+            
             subdiv.appendChild(node2);
 
         }
@@ -145,8 +149,8 @@ function GetMisc(category){
     function DisplayImage(picturefile) {
     let y = document.createElement("IMG");
     y.setAttribute("src", picturefile);
-    y.setAttribute("width", "200");
-    y.setAttribute("height", "200");
+    y.setAttribute("width", "300");
+    y.setAttribute("height", "300");
     y.setAttribute("clear", "both")
     y.setAttribute("float", "left")
 
