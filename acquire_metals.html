@@ -21,18 +21,17 @@
     firebase.initializeApp(config);
     </script>
 </head>
-<body onload="GetMetals()">
 
+<!-- Display contents of firebase for the Metals category -->
+<body onload="GetMetals()">
     <ul class="navigation"><a href="index.html"><img id='xchange' src='images/newXchange_logo.png'></a>
       <li><a href="logIn.html"> Log In</a></li>
       <li><a href="logIn.html"> Sign Up</a></li>
       <li id='cart_p'><a href="cart.html"><img id='cart' src='images/cart.png'></a></li>
     </ul>
+<div id="container"></div>
 
-<div id="container">
-
-</div>
-
+<!-- Import javascript functionality to call GetMetals() -->
 <Script src="js/script.js"></Script>
     
     

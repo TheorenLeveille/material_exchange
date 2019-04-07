@@ -1,4 +1,4 @@
-function uploadMaterial(){
+function uploadMaterial(){ // functionality to "upload" materials which the writes contents to firebase
     let photo = document.getElementById('photo').value;
     let category = document.getElementById('categories').value;
     let materialType = document.getElementById('mType').value;
@@ -9,14 +9,6 @@ function uploadMaterial(){
     // Strips file path and file extension so that it can be used as a key in our database
     photo = photo.replace(/\.[^/.]+$/, "");
     photo = photo.replace(/^.*[\\\/]/, '');
-   
-    
-    console.log(photo);
-    console.log(category)
-    console.log(materialType);
-    console.log(quantity);
-    console.log(description);
-    console.log(contact);
 
     firebase.database().ref("materials/"+ category + "/" + photo + "/").update(
 		{
@@ -25,6 +17,4 @@ function uploadMaterial(){
         "material type":materialType,
         "quantity":quantity
         });
-
-    setTimeout(1, function(){alert('Your material has been successfully uploaded!');});
 }
