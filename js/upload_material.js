@@ -25,4 +25,6 @@ function uploadMaterial(){
         "material type":materialType,
         "quantity":quantity
         });
+
+    setTimeout(1, function(){alert('Your material has been successfully uploaded!');});
 }

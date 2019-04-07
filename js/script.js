@@ -137,8 +137,6 @@ function GetMisc(category){
         let node = document.createTextNode(item['material type'])
         div.appendChild(node);
         for (y in item){
-            
-            console.log(y)
             let subdiv = document.createElement("div");
             document.getElementById(x).appendChild(subdiv);
             if (y == "material type"){
@@ -149,9 +147,7 @@ function GetMisc(category){
             subdiv.appendChild(node2);
 
         }
-        DisplayImage ("./images/"+ x + ".jpg"); 
-
-    
+        DisplayImage ("./images/"+ x + ".jpg");
     }
     }
     function DisplayImage(picturefile) {
