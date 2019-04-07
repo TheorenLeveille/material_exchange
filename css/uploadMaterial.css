@@ -54,7 +54,7 @@ a:hover{
     border:3px dashed black;
     margin:5px 0 0 5px;
     width:250px;
-    height:297px;
+    height:305px;
 }
 .uploadPhoto img{
     margin:120px 0 0 110px;
@@ -65,7 +65,7 @@ a:hover{
 }
 #submit{
     position:relative;
-    background-image:linear-gradient(45deg, #009900, #05b105);
+    background-image:linear-gradient(to right, #016d01, #009900);
     margin:40px 0 0 60px;
     height:60px;
     width:150px;
@@ -82,13 +82,51 @@ a:hover{
 #submit:hover{
     box-shadow:2px 2px 2px #616161;
 } 
-.materialType {
+#inputFields{
+    margin-left:275px;
+}
+#inputFields input, select, textarea {
+    position:relative;
+    border:1px solid black;
+    width:350px;
+}
+#inputFields form{
+    margin-top:10px;
+}
+#photo{
+    margin-top:5px;
+    margin-left:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .materialType {
     position:relative;
     margin:10px 0 0 280px;
 }
 #mType{
     width:350px;
     border:1px solid black;
+}
+#catlabel{
+    position:relative;
+    margin-top:20px;
+    margin-left:17px;
+}
+#categories{
+    position:relative;
+    border:1px solid black;
+    margin-left:17px;
 }
 .quantity{
     position:relative;
@@ -105,3 +143,12 @@ a:hover{
 .dtitle{
     margin-left:17px;
 }
+#contactlabel{
+    margin-left:17px;
+}
+#contact{
+    position:relative;
+    border:1px solid black;
+    width:350px;
+    margin-left:17px;
+} */

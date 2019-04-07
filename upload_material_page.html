@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Upload Material</title>
 
-    <script src='js/firebaseAPI.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+    <script src="js/firebaseAPI.js"></script>
+    <!-- <script src='js/firebaseAPI.js'></script> -->
     <link rel='stylesheet' type='text/css' href='css/uploadMaterial.css'>
     <script src='js/upload_material.js'></script>
 
@@ -20,26 +23,46 @@
 </ul>
 
 <div class="mainRect">
-    <a href="#"><div class="uploadPhoto">
+    <div class="uploadPhoto">
         <img src='images/camera.png' height="30px" width="30px">
         <p>Upload Photo</p>
-    </div></a>
+        <input type='file' id='photo'></input>
+    </div>
+    <div id=inputFields>
+        <form class="materialType">
+            <label for="mType">Material Type</label></br>
+            <input type="text" id="mType" name="mType" value=''>
+        </form>
 
-    <form class="materialType">
-        <label for="mType">Material Type</label>
-        <input type="text" id="mType" name="mType" value=''>
-    </form>
+        <form>
+            <label id='catlabel'>Category</label></br>
+            <select name='categories' id='categories'>
+                <option></option>
+                <option value='plastics'>Plastic</option>
+                <option value='metals'>Metal</option>
+                <option value='electronics'>Electronics</option>
+                <option value='wood'>Wood</option>
+                <option value='clothes'>Fabrics</option>
+                <option value='boardgames'>Board Games</option>
+                <option value='cardboard'>Cardboard</option>
+                <option value='misc'>Miscellaneous</option>
+            </select>
+        </form>
+        <form class="quantity">
+            <label for="qname">Quantity Available</label></br>
+            <input type="text" id="qname" name="qname" value=''>
+        </form>
 
-    <form class="quantity">
-        <label for="qname">Quantity Available</label>
-        <input type="text" id="qname" name="qname" value=''>
-    </form></br>
-    
-    <label class='dtitle'>Description</label>
-    <form>
-        <textarea id='description' rows='10' cols='48' value=''></textarea>
-    </form>
+        <form>
+            <label class='dtitle'>Description</label>
+            <textarea id='description' rows='4' cols='48' value=''></textarea>
+        </form>
 
+        <form class='contact'>
+            <lable id='contactlabel'>Contact Information</lable></br>
+            <input type='text' id='contact' value=''>
+        </form>
+    </div>
     <div id="submit" onclick="uploadMaterial()"><p>Submit</p></div> 
 </div>
 
