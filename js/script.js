@@ -1,9 +1,5 @@
-// document.getElementById('metals').addEventListener("click", 
-// function(){
-//     GetMetals("metals")
-//     // GetContributions("Contributions")
-// });
 
+// reads contents of metals in firebase
 function GetMetals(category){
     console.log(category);
     let dbRef = firebase.database().ref("materials/metals");
@@ -12,11 +8,10 @@ function GetMetals(category){
         console.log(snap.val());
 
         DisplayList(list)
-
-
     });
     }
 
+// reads contents of plastics in firebase
 function GetPlastics(category){
     console.log(category);
     let dbRef = firebase.database().ref("materials/plastics");
@@ -30,6 +25,7 @@ function GetPlastics(category){
 
     });
     }
+// reads contents of electronics in firebase
 function GetElectronics(category){
     console.log(category);
     let dbRef = firebase.database().ref("materials/electronics");
@@ -137,6 +133,8 @@ function GetMisc(category){
         let node = document.createTextNode(item['material type'])
         div.appendChild(node);
         for (y in item){
+            
+            console.log(y)
             let subdiv = document.createElement("div");
             document.getElementById(x).appendChild(subdiv);
             if (y == "material type"){
@@ -147,7 +145,9 @@ function GetMisc(category){
             subdiv.appendChild(node2);
 
         }
-        DisplayImage ("./images/"+ x + ".jpg");
+        DisplayImage ("./images/"+ x + ".jpg"); 
+
+    
     }
     }
     function DisplayImage(picturefile) {
